@@ -1,0 +1,81 @@
+.side-nav {
+    @include respond-to(phone) {
+        width: 0;
+        min-width: 0;
+    }
+    @include respond-to(toTablet) {
+        min-width: 0;
+        width: 0;
+    }
+
+
+    position: fixed;
+    height: 100%;
+    background: $dark-grey;
+    opacity: 0.9;
+    // min-width: 200px;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 120px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+            display: block;
+        }
+
+        a {
+            padding: 1rem 0px;
+            color: #868aa8;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.8rem;
+
+            i {
+                display: block;
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
+            }
+
+            &:hover {
+                background: #282a3c;
+                i {
+                    color: $dark-pink;
+                }
+            }
+        }
+    }
+}
+
+.left-side-nav {
+    @include respond-to(phone) {
+        width: 0;
+        min-width: 0;
+    }
+    @include respond-to(toTablet) {
+        min-width: 0;
+        width: 0;
+    }
+    min-width: 200px;
+    top: 0;
+    left: 0;
+}
+
+.right-side-nav {
+    width: 0;
+    top: 0;
+    right: 0;
+}
+
+.open {
+    width: 200px;
+
+    @include respond-to(phone) {
+        width: 100%;
+    }
+}

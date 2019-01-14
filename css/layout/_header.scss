@@ -1,0 +1,130 @@
+.main-header {
+	@include respond-to(phone) {
+    background: $dark-purple;
+	}
+	@include respond-to(toTablet) {
+    background: $dark-purple;
+	}
+	@include respond-to(tablet) {
+    background: $dark-purple;
+	}
+
+	background: #fff;
+	box-shadow: 0px 1px 15px 1px #45414e1a;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+
+    .logo-div {
+		@include respond-to(phone) {
+			min-width: 100px;
+		}
+
+		min-width: 200px;
+		background: $dark-grey;
+		display: flex;
+		margin: 0;
+		padding: 0.5rem 0;
+
+		.logo {
+			margin: auto;
+		}
+	}
+
+    
+	ul {
+		display: flex;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			padding: 1rem;
+		}
+
+		a {
+			color: #676c7b;
+			cursor: pointer;
+			display: block;
+			font-size: 1.2rem;
+			text-decoration: none;
+
+			&:hover {
+				color: $dark-pink;
+
+				i {
+					color: $dark-pink;
+				}
+			}
+		}
+	}
+
+
+	&__left-nav {
+		@include respond-to(phone) {
+			display: none;
+		}
+		@include respond-to(tablet) {
+			display: none;
+		}
+		@include respond-to(toTablet) {
+			display: none;
+		}
+		padding: 1rem 0;
+	}
+
+	&__right-nav {
+		@include respond-to(phone) {
+			display: none;
+		}
+		@include respond-to(tablet) {
+			display: none;
+		}
+		@include respond-to(toTablet) {
+			display: none;
+		}
+
+		margin-left: auto;
+		margin-right: 1.2rem;
+		padding: 1rem 0;
+
+		.profile {
+			height: 15px;
+			width: 15px;
+			margin: auto;
+			border-radius: 50%;
+			background: #f3f3f3;
+		}
+	}
+
+	&__mobile-nav {
+		@include respond-to(phone) {
+			display: flex;
+		}
+		@include respond-to(toTablet) {
+			display: flex;
+		}
+		@include respond-to(tablet) {
+			display: flex;
+
+			.left-side-menu-toggler {
+				display: none;
+			}
+		}
+
+		display: none;
+		margin-left: auto;
+
+		a {
+			color: #f4f4f4;
+			text-decoration: none;
+			margin: auto;
+			font-size: 1.7rem;
+			padding: 0 1rem;
+
+			&:hover {
+				color: $dark-pink;
+			}
+		}
+	}
+}

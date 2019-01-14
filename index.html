@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Metronic</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="logo-div"><img class="logo" src="assets/logo.png" /></div>
+			<nav class="main-header__left-nav">
+				<ul>
+					<li><a>Actions</a></li>
+					<li><a>Reports</a></li>
+					<li><a>Apps</a></li>
+				</ul>
+			</nav>
+			<nav class="main-header__right-nav">
+				<ul>
+					<li>
+						<a><i class="fa fa-search"></i></a>
+					</li>
+					<li>
+						<a><i class="fa fa-bell-o"></i></a>
+					</li>
+					<li>
+						<a><i class="fa fa-list-alt"></i></a>
+					</li>
+					<li class="profile"></li>
+					<li>
+						<a><i class="fa fa-envelope-o"></i></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="main-header__mobile-nav">
+				<a
+					href="#"
+					type="button"
+					class="mobile-nav__menu left-side-menu-toggler"
+					id="left-side-menu-toggler"
+					><i class="fa fa-align-left"></i
+				></a>
+				<a href="#" type="button" id="right-side-menu-toggler"
+					><i class="fa fa-align-right"></i
+				></a>
+			</nav>
+		</header>
+		<main>
+			<!-- Left sidebat -->
+			<aside class="side-nav left-side-nav">
+				<nav>
+					<ul>
+						<li>
+							<a href="#"><i class="fa fa-table"></i>Dashboard</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-align-justify"></i>Layouts</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-book"></i>Reports</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-info-circle"></i>Support</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-file-o"></i>Feedbacks</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fa fa-users"></i>Conversions</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fa fa-cog"></i> Settings</a>
+						</li>
+						<li>
+							<a href="#"> <i class="fa fa-question-circle-o"></i> Help </a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+			<!-- Main section -->
+			<section class="dashboard-section">
+				<div class="dashboard-section__heading"><h2>Dashboard</h2></div>
+				<div class="dashboard-section__wrapper">
+					<div class="dashboard-section__item quick-stats">
+						<div class="quick-stats__item">
+							<div>
+								<p>560</p>
+								<small>All Sales</small>
+							</div>
+							<div></div>
+						</div>
+						<div class="quick-stats__item">
+							<div>
+								<p>560</p>
+								<small>All orders</small>
+							</div>
+							<div></div>
+						</div>
+						<div class="quick-stats__item">
+							<div>
+								<p>560</p>
+								<small>All transactions</small>
+							</div>
+							<div></div>
+						</div>
+						<div class="quick-stats__item">
+							<div>
+								<p>560</p>
+								<small>All comissions</small>
+							</div>
+							<div></div>
+						</div>
+					</div>
+					<div class=" dashboard-section__item finance-summary">
+						<div class="finance-summary__heading">
+							<span>Finance Summary</span> <a href="#" class="month">Month</a>
+							<a href="#">All time</a>
+						</div>
+						<div class="finance-summary__body">
+							<div class="finance-summary-body__stats ">
+								<span>
+									Annual Companie Taxes <br />
+									<span>$500,00</span>
+								</span>
+								<span>
+									Next Tax Review Date <br />
+									<span>July 24, 2017</span>
+								</span>
+							</div>
+							<div class="finance-summary-body__stats ">
+								<span>
+									Avarage Product Price <br />
+									<span>$60,70</span>
+								</span>
+								<span>
+									Satisfaction rate <br />
+									<span>July 24, 2017</span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="dashboard-section__item top-products">
+						<div class=" top-products__heading">
+							<span>Top Products</span>
+							<a href="">All <i class="fa fa-chevron-down"></i></a>
+						</div>
+						<div class="top-products__list">
+							<div class=" top-products-list__item">
+								<img src="./assets/py.png" alt="" />
+								<div>
+									<span>Python</span> <br />
+									<small>A programming Language</small>
+								</div>
+								<span class=" price"> +17$ </span>
+							</div>
+							<div class="top-products-list__item">
+								<img src="./assets/fy.png" alt="" />
+								<div>
+									<span>FlyThemes</span> <br />
+									<small>Dope themes.</small>
+								</div>
+								<span class="price"> +300$ </span>
+							</div>
+							<div class="top-products-list__item">
+								<img src="./assets/star.png" alt="" />
+								<div>
+									<span>Ruby</span> <br />
+									<small>A programming Language</small>
+								</div>
+								<span class="price"> +300$ </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Right sidenav -->
+			<aside class="side-nav right-side-nav">
+				<nav>
+					<ul>
+						<li><a>Actions</a></li>
+						<li><a>Reports</a></li>
+						<li><a>Apps</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</main>
+		<script src="./scripts/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+files:
+  include: 'css/**/*.s+(a|c)ss'
+options:
+  formatter: stylish
+rules:
+  nesting-depth:
+    - 1
+    - max-depth: 3
